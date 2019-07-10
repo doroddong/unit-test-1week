@@ -32,7 +32,7 @@ public class CustomCalculatorTest {
     public void multiply() {
         customCalculator = new CustomCalculator();
         int result = customCalculator.multiply(5,9);
-        /* 이곳에 테스트 코드를 작성하세요. */
+        assertThat(result,is(45));
         System.out.println("result :: " + result);
     }
 
